@@ -1,0 +1,56 @@
+.menu-wrapper {
+    padding: 1rem 1rem;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    padding: 1rem 2rem;
+    max-width: 1300px;
+    margin: auto;
+    background: black;
+    border-radius: 10px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu .col-1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-item {
+    font-weight: 500;
+    margin: auto;
+}
+
+.menu-item a {
+    color: white;
+}
+
+.menu-item a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2.5px;
+    margin: auto;
+    margin-top: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.menu-item a:hover::after,
+.menu-item a:focus::after,
+.menu-item a:active::after {
+    width: 100%;
+}
+
+.login-btn {
+    font-weight: 600;
+    background: white;
+    color: black;
+    outline: 0;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
